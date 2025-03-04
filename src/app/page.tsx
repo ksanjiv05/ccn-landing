@@ -221,8 +221,8 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="fixed bottom-0 left-0">
-        <a href="#register">
+      <div className="fixed bottom-0 left-0 z-20">
+        <a href="/register">
           <img
             src="Register-Now-GIF-1.gif"
             width={250}

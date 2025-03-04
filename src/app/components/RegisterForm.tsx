@@ -111,7 +111,7 @@ function RegisterForm() {
       <button
         disabled={loading}
         onClick={(e) => handleSubmit(e)}
-        className="bg-red-500 w-full text-white px-4 py-2 rounded-md"
+        className="bg-red-500 w-full text-white px-4 py-2 rounded-md cursor-pointer"
       >
         {loading ? "Submitting..." : "Register"}
       </button>

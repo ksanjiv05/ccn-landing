@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaBook, FaArrowRight } from "react-icons/fa";
 function Course({
@@ -31,12 +32,12 @@ function Course({
           ))}
         </ul>
         <div className="flex">
-          <a
-            href="#register"
+          <Link
+            href="/register"
             className="flex items-center gap-2 bg-red-500 text-white px-4 py-2 mt-4 rounded-md"
           >
             Register for Demo <FaArrowRight />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
