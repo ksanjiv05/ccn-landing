@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <style>
+      .navbar {
+        width: 100%;
+        height: 40px;
+        background-color: #333;
+      }
+      .navbar_list {
+        list-style: none;
+        color: aliceblue;
+        display: flex;
+        height: 40px;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .navbar_list li {
+        margin-right: 10px;
+        background-color: rgb(5, 133, 105);
+        padding: 10px;
+      }
+      .navbar_list li:hover {
+        background-color: rgb(30, 194, 159);
+      }
+      .containt_conatiner {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        background-color: blanchedalmond;
+        background-image: url("https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk=");
+      }
+      .containt {
+        width: 50%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.394);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .containt h1,
+      .containt p {
+        color: white;
+      }
+      .containt a {
+        text-decoration: none;
+        color: rgb(18, 158, 180);
+        padding: 10px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: antiquewhite;
+      }
+      .icon_container {
+        width: 40px;
+        height: 200px;
+        position: absolute;
+
+        right: 30px;
+        top: 30px;
+      }
+      .icon {
+        width: 40px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nav bar demo</h1>
+    <!-- nav bar start-->
+    <div class="navbar">
+      <ul class="navbar_list">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <!-- nav bar end-->
+    <div class="containt_conatiner">
+      <div class="containt">
+        <h1>My Title</h1>
+        <p>
+          Want to know where this information comes from? Learn more Images may
+          be subject to copyright.
+        </p>
+        <a href="#">button</a>
+      </div>
+      <div class="icon_container">
+        <img
+          class="icon"
+          src="https://t3.ftcdn.net/jpg/05/18/09/32/360_F_518093233_bYlgthr8ZLyAUQ3WryFSSSn3ruFJLZHM.jpg"
+        />
+      </div>
+    </div>
+  </body>
+</html>
