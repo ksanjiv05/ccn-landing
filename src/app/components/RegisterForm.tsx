@@ -2,6 +2,7 @@
 import axios from "axios";
 import React from "react";
 import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 
 const email_regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phone_regex = /^\+?[1-9]\d{9,14}$/;
@@ -26,7 +27,8 @@ function RegisterForm() {
     photo: "",
     Comment: "",
   });
-
+  const [loading, setLoading] = React.useState(false);
+  const router = useRouter();
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
@@ -49,7 +51,7 @@ function RegisterForm() {
       toast("Please enter a valid phone number.", { type: "error" });
       return;
     }
-
+    setLoading(true);
     const formData = objectToFormData(data);
 
     axios
@@ -63,10 +65,14 @@ function RegisterForm() {
         }
       )
       .then((response) => {
+        setLoading(false);
         console.log("Success:", response.data);
-        toast("Form submitted successfully", { type: "success" });
+        // router.push("/thanks");
+        router.push("/thanks");
+        // toast("Form submitted successfully", { type: "success" });
       })
       .catch((error) => {
+        setLoading(false);
         console.error("Error:", error);
         toast("Form submission failed", { type: "error" });
       });
@@ -103,10 +109,11 @@ function RegisterForm() {
         }}
       ></textarea>
       <button
+        disabled={loading}
         onClick={(e) => handleSubmit(e)}
         className="bg-red-500 w-full text-white px-4 py-2 rounded-md"
       >
-        Register
+        {loading ? "Submitting..." : "Register"}
       </button>
     </div>
   );
