@@ -152,22 +152,35 @@ const student_reviews = [
   },
 ];
 
+// Current headline, "Want to become an CEH Expert?", is clear but could be more compelling. Consider emphasizing the value proposition:
+
+// "Transform into a Certified Ethical Hacker and Secure Your Future in Cybersecurity!"
+
+// Follow this with a subheadline that addresses common pain points:
+
+// "Missed Out on Campus Placements? Join CCN and Secure Your Dream Job in Just 6 Months!"
+
+// Need Action-Oriented CTAs
+// USE-
+// "Secure My Spot Now!"
+// "Start My Cybersecurity Journey Today!"
+
 export default function Home() {
   return (
     <div>
       <div className="grid md:grid-cols-3 gap-4 md:h-[90vh]" id="register">
         <div className="md:col-span-2 ">
           <div className="flex flex-col justify-center h-full">
-            <h1 className=" font-bold md:text-7xl text-4xl md:mt-0 mt-4">
-              Want to become an CEH Expert?
+            <h1 className=" font-bold md:text-6xl text-4xl md:mt-0 mt-4">
+              Transform into a Certified Ethical Hacker and Secure Your Future
+              in Cybersecurity!
             </h1>
             <p className="md:mt-4 mt-2 md:text-3xl text-xl my-2">
-              Become a Certified Ethical Hacker and master the skills to protect
-              and defend digital systems.
+              Missed Out on Campus Placements? Join CCN and Secure Your Dream
+              Job in Just 6 Months!
             </p>
-            <p className="md:mt-4 mt-2 md:text-lg">
-              Zero Job Offer During Campus Placement? Don't Worry! Join CCN to
-              Get Placed Within 6 Months!
+            <p className="md:mt-4 mt-2 md:text-xl ">
+              Don't miss out—claim your free demo today!
             </p>
           </div>
         </div>
@@ -177,16 +190,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="course" className="mt-8  md:h-[100vh]">
+      <div id="course" className="mt-8 md:my-18">
         <h1 className="md:text-5xl text-3xl font-bold text-center  mb-8">
           Our Courses
         </h1>
         <Courses />
       </div>
 
-      <div className="mt-8">
+      <div className="mt-8 md:my-18">
         <h1 className="md:text-5xl text-3xl font-bold text-center  mb-8">
-          Placement
+          Placements
         </h1>
         <div className="mt-2">
           <CustomCarousel

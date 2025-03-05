@@ -1,6 +1,12 @@
 import React from "react";
 import Course from "./Course";
 
+// Highlight the unique benefits of your courses:
+
+// Cyber Security Associate: "Master foundational skills with certifications like CCNA and CEH in just 6 months."
+// Cyber Security Professional: "Advance your career with comprehensive training, unlimited interviews, and guaranteed placement."
+// Cyber Security Expert: "Become an industry leader with specialized training in Forensic Investigation and Bug Bounty programs."
+
 export const courses = [
   {
     title: "Cyber Security Associate",
@@ -12,6 +18,9 @@ export const courses = [
       "Checkpoint Firewall (CCSA)",
       "Palo Alto Firewall (PCNSA)",
       "Maximum 5 Interviews",
+    ],
+    benefits: [
+      "Master foundational skills with certifications like CCNA and CEH in just 6 months.",
     ],
   },
   {
@@ -27,6 +36,9 @@ export const courses = [
       "100% placement guaranteed on bond",
       "Lifetime Consultation Programme",
       "Soft Skill + Mock Interview Preparation",
+    ],
+    benefits: [
+      "Advance your career with comprehensive training, unlimited interviews, and guaranteed placement.",
     ],
   },
   {
@@ -45,6 +57,9 @@ export const courses = [
       "Lifetime Consultation Programme",
       "Soft Skills + Mock",
     ],
+    benefits: [
+      "Become an industry leader with specialized training in Forensic Investigation and Bug Bounty programs.",
+    ],
   },
 ];
 
@@ -57,6 +72,7 @@ function Courses() {
           title={course.title}
           duration={course.duration}
           certifications={course.certifications}
+          benefits={course.benefits}
         />
       ))}
     </div>

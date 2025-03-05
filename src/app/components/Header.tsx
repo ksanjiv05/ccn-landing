@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { FaPhone, FaArrowRight } from "react-icons/fa";
 
 function Header() {
   return (
@@ -36,9 +37,15 @@ function Header() {
           {/* <button className="bg-amber-500 text-white px-4 py-2 rounded-md">
             <Link href="/login">Login</Link>
           </button> */}
-          <button className="bg-red-500 text-white px-4 py-2 rounded-md ml-4">
+          <p className="text-lg text-center md:text-left">
+            <a href="tel:+917777097791 " className="flex items-center ">
+              <FaPhone className="mr-2 rotate-90" />
+              +91 7777097791
+            </a>
+          </p>
+          {/* <button className="bg-red-500 text-white px-4 py-2 rounded-md ml-4">
             <Link href="/register">Register</Link>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
