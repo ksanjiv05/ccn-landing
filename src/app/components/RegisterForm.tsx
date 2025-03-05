@@ -3,6 +3,7 @@ import axios from "axios";
 import React from "react";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
+import moment from "moment";
 
 const email_regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phone_regex = /^\+?[1-9]\d{9,14}$/;
@@ -15,7 +16,7 @@ function objectToFormData(obj: any) {
       formData.append(key, obj[key]);
     }
   }
-
+  formData.append("Date", moment().format("YYYY-MM-DD hh:mm A"));
   return formData;
 }
 
@@ -56,7 +57,7 @@ function RegisterForm() {
 
     axios
       .post(
-        "https://script.google.com/macros/s/AKfycbwkCy4eKTtPTGTYGv7gRfB_tJYBL53XerNKXeL8QcqUkXUOfqanFg1Rcn9soXTpxkXT/exec",
+        "https://script.google.com/macros/s/AKfycbz-vwFGEty1y5tvtcesNmY1w1XJJ1xdttajUb2XEfTH5Hy68ttb0InupMQLWDlCc-56/exec",
         formData,
         {
           headers: {
