@@ -152,19 +152,6 @@ const student_reviews = [
   },
 ];
 
-// Current headline, "Want to become an CEH Expert?", is clear but could be more compelling. Consider emphasizing the value proposition:
-
-// "Transform into a Certified Ethical Hacker and Secure Your Future in Cybersecurity!"
-
-// Follow this with a subheadline that addresses common pain points:
-
-// "Missed Out on Campus Placements? Join CCN and Secure Your Dream Job in Just 6 Months!"
-
-// Need Action-Oriented CTAs
-// USE-
-// "Secure My Spot Now!"
-// "Start My Cybersecurity Journey Today!"
-
 export default function Home() {
   return (
     <div>
