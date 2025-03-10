@@ -82,10 +82,15 @@ function RegisterForm() {
   return (
     <div className=" flex-col gap-1 px-2.5">
       <label htmlFor="Name">Name</label>
+      <br />
       <input type="text" name="Name" onChange={handleChange} />
+      <br />
       <label htmlFor="Email">Email</label>
+      <br />
       <input type="email" name="Email" onChange={handleChange} />
+      <br />
       <label htmlFor="Phone">Phone Number</label>
+      <br />
       <input
         type="text"
         minLength={10}
@@ -102,13 +107,16 @@ function RegisterForm() {
         className="text-gray-400"
         accept="image/*"
       /> */}
+      <br />
       <label htmlFor="comment">Comment</label>
+      <br />
       <textarea
         name="Comment"
         onChange={(e) => {
           setData({ ...data, [e.target.name]: e.target.value });
         }}
       ></textarea>
+      <br />
       <button
         disabled={loading}
         onClick={(e) => handleSubmit(e)}
