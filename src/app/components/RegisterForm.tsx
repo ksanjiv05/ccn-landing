@@ -80,7 +80,7 @@ function RegisterForm() {
   };
 
   return (
-    <div className=" flex-col gap-1 px-2.5">
+    <div className=" flex-col w-full gap-1 px-2.5">
       <label htmlFor="Name">Name</label>
       <br />
       <input type="text" name="Name" onChange={handleChange} />
