@@ -17,7 +17,7 @@ function Header() {
         <div className="flex flex-1 items-center">
           <ul className="md:flex hidden ">
             <li className="text-white">
-              <Link href="#register" className="link">
+              <Link href="/" className="link">
                 Home
               </Link>
             </li>
