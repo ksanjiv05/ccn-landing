@@ -2,7 +2,7 @@
 import React from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { api_url } from "@/config/config";
 import OtpInput from "react-otp-input";
 import Loader from "@/components/Loader";
@@ -16,7 +16,7 @@ function Verification() {
   const [is_phone_verified, setIsPhoneVerified] = React.useState(false);
   const [loader, setLoader] = React.useState(false);
   const router = useRouter();
-  const searchParams = useSearchParams();
+  // const searchParams = useSearchParams();
 
   const verify = async (is_email_verification: boolean) => {
     try {
