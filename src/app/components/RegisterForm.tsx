@@ -57,7 +57,7 @@ function RegisterForm() {
 
     axios
       .post(
-        "https://script.google.com/macros/s/AKfycbz-vwFGEty1y5tvtcesNmY1w1XJJ1xdttajUb2XEfTH5Hy68ttb0InupMQLWDlCc-56/exec",
+        "https://script.google.com/macros/s/AKfycbxG5hjZWVACtgj2jlgGdYTdiyKreetKqL4tlqxgJO7mjeFvaVQWGi-N_2dOmsJNm2hp/exec",
         formData,
         {
           headers: {
